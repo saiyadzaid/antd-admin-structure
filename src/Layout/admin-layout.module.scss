@@ -1,0 +1,48 @@
+@import '../base.scss';
+
+.adminLayout {
+	min-height: 100vh;
+	margin-left: 200px;
+	transition: all 0.3s;
+}
+
+.adminSider {
+	position: fixed;
+	height: 100vh;
+	overflow: auto;
+	left: 0;
+	z-index: 11;
+}
+
+.adminHeader {
+	background: #fff;
+	padding-right: 24px;
+	display: flex;
+	align-items: center;
+	height: 40px;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 0 5px 2px rgb(212, 212, 212);
+	z-index: 10;
+}
+
+.adminUsername {
+	cursor: pointer;
+	min-width: 5rem;
+	text-align: end;
+	transition: 0.2s color;
+	&:hover {
+		color: rgb(1, 141, 255);
+	}
+}
+
+.adminContent {
+	margin: 16px;
+	margin-top: 4rem;
+}
+
+@media screen and (max-width: 1200px) {
+	.adminLayout {
+		margin-left: 80px;
+	}
+}
